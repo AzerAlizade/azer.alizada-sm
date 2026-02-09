@@ -1,5 +1,201 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><title>Azer Portfolio</title></head>
-<body>OK</body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azer Alizada | Senior Scrum Master</title>
+  <meta name="description" content="Senior Scrum Master — Banking & FinTech. End-to-end delivery, stakeholder & vendor management, Agile metrics and dashboards." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home">Azer Alizada</a>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#approach">Approach</a>
+        <a href="#certs">My Certifications</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#meeting">Meeting Request</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <section class="hero-left">
+        <p class="eyebrow">Welcome! explore my work and impact</p>
+        <h1>Senior Scrum Master — Banking & FinTech</h1>
+        <p class="lead">
+          8+ years delivering complex initiatives in banking and government environments.
+          I align stakeholders, ship in small slices, and track success through delivery metrics and outcomes.
+        </p>
+
+        <div class="chips" id="heroChips"></div>
+
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Say Hello</a>
+          <a class="btn ghost" href="#meeting">Book 30 min</a>
+        </div>
+
+        <p class="muted">Open to interesting delivery & transformation problems in UAE.</p>
+      </section>
+
+      <aside class="hero-right card">
+        <div class="profile">
+          <img class="avatar" src="assets/img/profile.jpg" alt="Azer Alizada" />
+          <div>
+            <h2 class="h2">Azer Alizada</h2>
+            <p class="muted">Senior Scrum Master / Project Manager</p>
+            <div class="mini">
+              <span class="pill">Immediate joiner</span>
+              <span class="pill">UAE</span>
+              <span class="pill">PMP • PMI-ACP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats" id="heroStats"></div>
+
+        <a class="link" href="assets/docs/Azer_Alizada_CV.pdf" target="_blank" rel="noreferrer">Download full CV</a>
+      </aside>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted" id="aboutText"></p>
+      </div>
+
+      <div class="grid4" id="aboutCards"></div>
+
+      <div class="card callout">
+        <h3>Selected Results</h3>
+        <ul id="resultsList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="muted">Impact stories across banking and government programs.</p>
+      </div>
+
+      <div class="filters" id="expFilters"></div>
+      <div class="accordion" id="expAccordion"></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>My Work & Case Studies</h2>
+        <p class="muted">Key outcomes and what I built (non-confidential).</p>
+      </div>
+
+      <div class="project-toolbar">
+        <div class="filters" id="projFilters"></div>
+        <input class="search" id="projSearch" placeholder="Search projects" />
+      </div>
+
+      <div class="grid3" id="projGrid"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Tools and practices I use to deliver outcomes.</p>
+      </div>
+      <div class="chips" id="skillsChips"></div>
+    </div>
+  </section>
+
+  <section id="approach" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Approach</h2>
+        <p class="muted">Outcome-first discovery → predictable delivery → measured impact.</p>
+      </div>
+      <div class="grid3" id="approachCards"></div>
+    </div>
+  </section>
+
+  <section id="certs" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>My Certifications</h2>
+        <p class="muted">Credibility and continuous learning.</p>
+      </div>
+      <div class="grid3" id="certCards"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let’s connect.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Say Hello</h3>
+          <p class="muted">Email works best for interviews / referrals.</p>
+          <div class="row">
+            <a class="btn" href="mailto:azer.alizadeh94@gmail.com?subject=Interview%20Opportunity%20-%20Azer%20Alizada">Email me</a>
+            <a class="btn ghost" href="https://linkedin.com/in/YOUR-LINK" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quick Message</h3>
+          <form id="quickForm">
+            <label>Name <input name="name" required></label>
+            <label>Email <input name="email" type="email" required></label>
+            <label>Message <textarea name="message" rows="4" required></textarea></label>
+            <button class="btn" type="submit">Open Email Draft</button>
+            <p class="muted small">Opens your email client (no backend).</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="meeting" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Meeting Request</h2>
+        <p class="muted">Embed your Calendly link here.</p>
+      </div>
+
+      <div class="card embed">
+        <iframe id="calendlyFrame" title="Meeting Scheduler" frameborder="0"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span class="muted small">© <span id="year"></span> Azer Alizada</span>
+      <a class="muted small" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/script.js"></script>
+</body>
 </html>
